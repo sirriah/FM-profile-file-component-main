@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  margin: 0;
+}
+
+h3 {
+  position: relative;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  font-size: 18px;
+}
+
+.main {
+  background-color: #19a2ae;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  height: 720px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-position: calc(-270px - ((1440px - 100vw)/2)) -520px, calc(710px - ((1440px - 100vw)/2)) 380px;
+  background-repeat: no-repeat;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.fontDark {
+  color: #2d3248;
+  font-weight: 700;
+}
+
+.fontLight {
+  color: #969696;
+  font-weight: 400;
+}
+
+.profile {
+  width: 350px;
+  height: auto;
+  margin: 0 auto 2em;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  -webkit-box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+          box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+}
+
+.profile-header {
+  height: 140px;
+  background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: repeat;
+  border-radius: 15px 15px 0 0;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px white solid;
+  position: absolute;
+  left: calc(50% - 48px);
+  top: 88px;
+}
+
+.profile-personalData {
+  padding-top: 3.6em;
+  padding-bottom: 1.3em;
+  text-align: center;
+}
+
+h3, .profile-age {
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.profile-city {
+  font-size: 14px;
+}
+
+.profile-stats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  text-align: center;
+  border-top: #E8E9EC 1px solid;
+  padding-top: 1.5em;
+  padding-bottom: 1.3em;
+}
+
+.profile-statsWord {
+  font-size: 10px;
+  padding-top: 0.8em;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 375px) {
+  .profile {
+    max-width: 326px;
+  }
+  .main {
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-position: -420px -350px, calc(710px - ((1440px - 100vw)/2)) 380px;
+    background-size: 622px 622px, 622px 622px;
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=style.css.map */
